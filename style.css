@@ -110,6 +110,7 @@ nav ul li a {
     url("./images/background.jpg");
 
   animation: herobg 3s ease-in;
+  background-position: center;
 }
 
 .content {
@@ -147,8 +148,8 @@ nav ul li a {
 #qualities {
   width: 90%;
   max-width: 1366px;
-  margin: 5rem auto 0 auto;
-  min-height: 50vh;
+  margin: 7rem auto;
+  height: 100%;
   text-align: center;
 }
 
@@ -226,13 +227,15 @@ i {
   margin: 5rem auto 0 auto;
   height: 100%;
   padding: 2rem 0;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
-  width: 70%;
+  width: 100%;
+  align-items: center;
 }
 
 form .btn {
@@ -256,11 +259,14 @@ textarea {
 
 input,
 textarea {
-  width: 50%;
+  width: 80%;
   border-radius: 1rem;
   border: none;
   outline: none;
   padding: 0.75rem 2rem;
+}
+.contact-us {
+  text-align: center;
 }
 
 textarea {
@@ -282,7 +288,7 @@ footer p {
 
 @keyframes herobg {
   from {
-    scale: 1.4;
+    scale: 1.2;
   }
   to {
     scale: 1;
@@ -322,17 +328,6 @@ footer p {
   .quality {
     width: 100%;
   }
-  .contact-us {
-    text-align: center;
-  }
-  form {
-    width: 100%;
-    align-items: center;
-  }
-  input,
-  textarea {
-    width: 80%;
-  }
 }
 
 @media (max-width: 752px) {
@@ -347,5 +342,12 @@ footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  input,
+  textarea {
+    width: 40%;
   }
 }
